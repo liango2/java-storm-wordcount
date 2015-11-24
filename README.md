@@ -22,3 +22,27 @@ mvn archetype:create -DgroupId=storm.blueprints -DartifactId=Chapter1 -DpackageN
   mvn install
 ```
 
+...
+
+### 4. 运行
+```
+---- FINAL COUNTS ---
+a : 1389
+ate : 1390
+beverages : 1390
+cold : 1390
+cow : 1389
+dog : 2779
+don't : 2777
+fleas : 2778
+has : 1390
+have : 1389
+homework : 1390
+i : 4166
+like : 2778
+man : 1389
+my : 2779
+the : 1390
+think : 1389
+----------------------
+```
