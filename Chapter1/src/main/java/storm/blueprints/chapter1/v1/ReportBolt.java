@@ -6,10 +6,7 @@ import backtype.storm.topology.OutputFieldsDeclarer;
 import backtype.storm.topology.base.BaseRichBolt;
 import backtype.storm.tuple.Tuple;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author liango
@@ -17,10 +14,10 @@ import java.util.Map;
  * @since 2015-11-24 23:52
  */
 public class ReportBolt extends BaseRichBolt {
-    private Map<String, Long> counts;
+    private Map<String, Long> counts = null;
 
     public void prepare(Map stormConf, TopologyContext context, OutputCollector collector) {
-
+        counts = new HashMap<String, Long>();
     }
 
     public void execute(Tuple input) {
